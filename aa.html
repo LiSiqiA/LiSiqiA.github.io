@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEWORK3</title>
+    <style>
+        header{
+            background-color: pink;
+            text-align: center;
+            color: white;
+            padding: 20px
+        }
+        nav{
+
+            color: white;
+            background-color:orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        h4{
+          background-color: pink;
+          width: 200px;
+          border-radius: 10px;
+          text-align: center;
+        }
+        h4:hover{
+          scale:1.5;
+        }
+        
+        main{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .list{
+          flex: 2;
+          background-color: gray;
+          border: 5px solid blue;
+         
+        }
+        .section{
+          flex:5;
+          width:80%;
+          background-color: green;
+        }
+        form{
+          color: white;
+          box-sizing: border-box;
+          
+        }
+        button{
+          width: 100px;
+          height: 30px;
+          background-color: orange;
+          margin: 10px;
+          border-radius: 10px;
+        }
+        .right{
+          flex:3;
+          text-align: center;
+          background-color:bisque;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+            border: 5px solid blue;
+        }
+        .right li{
+          list-style: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PERSONAL INFORMATION</h1>
+        <h2>HUNAN UNIVERISTY OF ARTS AND SCIENCE, CHANGDE</h2>
+    </header>
+    <nav>
+       <h4>HOME</h4>
+       <h4>NAME</h4>
+       <h4>TABLE</h4>
+       <h4>SEARCH</h4>
+       <h4>HELP</h4>
+    </nav>
+    <main>
+        <aside class="list">
+        <ul>
+        <li>Introduction</li>
+        <li>Student Information</li>
+        <li>Class Information</li>
+        <li>Courses</li>
+        <li>Exams</li>
+        <li>Teachers</li>
+        </ul>
+    </aside>
+    <section class="section">
+      <form id="Personal">
+        <fieldset>
+        <legend><h3>Personal Information</h3></legend>
+        <div class="img"><img src="../琴菜/微信图片_20250515212937.jpg" alt="" width="100px" height="100px"></div>
+        <label for="first name">First Name:</label>
+        <input type="text" id="first name" placeholder="First Name" required><br>
+        <label for="last name">Last Name:</label>
+        <input type="text" id="last name" placeholder="Last Name" required><br>
+        <label for="contact number">contact Number:</label>
+        <input type="text" id="contact number" placeholder="Phone Number"><br>
+        <label for="studentid">Student ID:</label>
+        <input type="text" id="student id" placeholder="Student ID" required><br>
+        <div class="gender radio">
+          <label for="Gender">Gender:</label>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="female"><br>
+        </div>
+        <div>Select Your Courses</div>
+        <div class="course checkboxes">
+          <label for="c programming">C Programming</label>
+          <input type="checkbox" id="c programming" name="courses" value="c programming">
+          <label for="web development">Web Development</label>
+          <input type="checkbox" id="web development" name="courses" value="web development">
+          <label for="computer science">Computer Science</label>
+          <input type="checkbox" id="computer science" name="courses" value="computer science">
+        </div>
+        <button type="submit">Save</button>
+        <button type="reset">Cancel</button>
+        
+        </fieldset>
+      </form>
+    </section>
+    <aside class="right" style="width: 200px;">
+      <ul>
+        <li>Changde</li><br>
+        <li>Nanchang</li><br>
+        <li>Beijing</li><br>
+        <li>Shanghai</li><br>
+        <li>Tianjin</li><br>
+        <li>Nanjing</li><br>
+        <li>Wuxi</li><br>
+        <li>Shenzen</li><br>
+      </ul>
+    </aside>
+  </main>
+</body>
+</html>
